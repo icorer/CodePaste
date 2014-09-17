@@ -1,0 +1,39 @@
+
+#ifndef CURL_STATICLIB
+#define CURL_STATICLIB  //必须在包含curl.h前定义
+#endif
+
+
+#include <iostream>
+#include "curl/curl.h"
+//以下四项是必须的
+#pragma comment ( lib, "libcurl.lib" )
+#pragma comment ( lib, "ws2_32.lib" )
+#pragma comment ( lib, "winmm.lib" )
+#pragma comment ( lib, "wldap32.lib" )
+
+using namespace std;
+
+size_t write_callback(char *ptr, size_t size, size_t nmemb, void *userdata){ //回调函数进行信息处理
+	if(strcmp(ptr,"")!=0)
+		MessageBox(NULL,ptr,"提示",MB_OK);
+	size_t realsize = size * nmemb; //正确的返回值设置
+return realsize;
+}
+
+
+int main(void)
+{
+	//初始化链接
+	CURL* curl_link;
+	CURLcode curl_ret;
+	curl_link=curl_easy_init();
+	//进行curl的参数设置
+	curl_easy_setopt(curl_link,CURLOPT_URL,"http://baidu.com");
+	curl_easy_setopt(curl_link,CURLOPT_WRITEFUNCTION,write_callback);
+	//执行curl命令
+	curl_ret=curl_easy_perform(curl_link);
+	//curl清理工作
+	curl_easy_cleanup(curl_link);
+return 0;
+}

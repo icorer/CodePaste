@@ -1,0 +1,98 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CodesPaste - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/CodesPaste.res" /d "NDEBUG" /d "_AFXDLL" "D:\Git\CodesPaste\MFC部分\CodesPaste.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8954.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/CodesPaste.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Git\CodesPaste\MFC部分\CodesPaste.cpp"
+"D:\Git\CodesPaste\MFC部分\CodesPasteDlg.cpp"
+"D:\Git\CodesPaste\MFC部分\func.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8954.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8965.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/CodesPaste.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Git\CodesPaste\MFC部分\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8965.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8966.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/CodesPaste.pdb" /machine:I386 /out:"Release/CodesPaste.exe" 
+".\Release\CodesPaste.obj"
+".\Release\CodesPasteDlg.obj"
+".\Release\func.obj"
+".\Release\StdAfx.obj"
+".\Release\CodesPaste.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8966.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CodesPaste.cpp
+CodesPasteDlg.cpp
+func.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+CodesPaste.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: CodesPaste - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/CodesPaste.res" /d "_DEBUG" "D:\Git\CodesPaste\MFC部分\CodesPaste.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8E09.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/CodesPaste.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Git\CodesPaste\MFC部分\CodesPaste.cpp"
+"D:\Git\CodesPaste\MFC部分\CodesPasteDlg.cpp"
+"D:\Git\CodesPaste\MFC部分\func.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8E09.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8E0A.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/CodesPaste.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Git\CodesPaste\MFC部分\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8E0A.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8E0B.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/CodesPaste.pdb" /debug /machine:I386 /out:"Debug/CodesPaste.exe" /pdbtype:sept 
+".\Debug\CodesPaste.obj"
+".\Debug\CodesPasteDlg.obj"
+".\Debug\func.obj"
+".\Debug\StdAfx.obj"
+".\Debug\CodesPaste.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8E0B.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CodesPaste.cpp
+CodesPasteDlg.cpp
+func.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/CodesPaste.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\CodesPaste.sbr" ".\Debug\CodesPasteDlg.sbr" ".\Debug\func.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CodesPaste.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
